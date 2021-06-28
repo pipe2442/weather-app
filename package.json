@@ -1,0 +1,27 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack --mode development",
+    "watch": "webpack --mode development --watch",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipe2442/weather-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pipe2442/weather-app/issues"
+  },
+  "homepage": "https://github.com/pipe2442/weather-app#readme",
+  "dependencies": {
+    "webpack": "^5.41.0",
+    "webpack-cli": "^4.7.2"
+  }
+}
