@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("const city = 'barranquilla'\n\nfetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=96f35486a037092415de2038db8e1138`, {mode: 'cors'})\n.then(function(response) {\nreturn response.json();\n}).then(function(response) {\n    console.log(response.main.temp - 273.15);\n}); \n\n\n//# sourceURL=webpack://weatherapp/./src/index.js?");
+eval("const city = 'barranquilla'\nconst url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=96f35486a037092415de2038db8e1138`\nconst dom = document.querySelector('#content')\n\nfetch(url, {mode: 'cors'})\n.then(response => response.json())\n.then(data => {\n        const p = document.createElement('p')\n        p.innerHTML = data.main.temp - 273.15\n        dom.appendChild(p)\n    })\n.catch(err => console.log(err))\n\n//# sourceURL=webpack://weatherapp/./src/index.js?");
 
 /***/ })
 
