@@ -17,16 +17,11 @@ const displayWeather = (city, icon, temp, description, country, main) => {
   today = `${mm}/${dd}/${yyyy}`;
   time = `${hour}:${minutes}`;
 
-  function random(min, max) {
-    const number = Math.random() * (max - min) + min;
-    return Math.trunc(number);
-  }
-  const number = random(1, 8);
-  const body = document.getElementById('bd');
+
   const tempcel = temp - 273.15;
   const tempfa1 = tempcel * 9;
   const tempfa = tempfa1 / 5 + 32;
-  body.style.backgroundImage = `url(../../dist/assets/images/bg${number}.jpg)`;
+  
 
   div.innerHTML = `
   
