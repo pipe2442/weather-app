@@ -31,6 +31,8 @@ const request = () => {
       };
       cel.onclick = showCel;
       fa.onclick = showFa;
+    }).catch((e) => {
+      console.log(e);
     });
 };
 
