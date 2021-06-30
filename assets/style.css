@@ -3,10 +3,20 @@ body {
     padding: 0;
     height: 100%;
     background-image: url(images/universe.jpg);
-    display: flex;
-    justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.card-weather {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.card-box{
+    background-color: rgba(0, 0, 0, 0.212); 
+    color: rgba(115, 115, 114, 0.2);
+    margin: 55px 20%;
+    padding: 45px 0;
+    border-radius: 5%;
 }
