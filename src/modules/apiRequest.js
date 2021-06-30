@@ -7,7 +7,23 @@ const request = () => {
   }
   const number = random(1, 8);
   const body = document.getElementById('bd');
-  body.style.backgroundImage = `url(../../dist/assets/images/bg${number}.jpg)`;
+  if (number === 1) {
+    body.style.backgroundImage = 'url(https://images.pexels.com/photos/2150/sky-space-dark-galaxy.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)';
+  } else if (number === 2) {
+    body.style.backgroundImage = 'url(https://images.pexels.com/photos/2072600/pexels-photo-2072600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)';
+  } else if (number === 3) {
+    body.style.backgroundImage = 'url(https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)';
+  } else if (number === 4) {
+    body.style.backgroundImage = 'url(https://images.pexels.com/photos/76969/cold-front-warm-front-hurricane-felix-76969.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)';
+  } else if (number === 5) {
+    body.style.backgroundImage = 'url(https://images.pexels.com/photos/5026754/pexels-photo-5026754.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)';
+  } else if (number === 6) {
+    body.style.backgroundImage = 'url(https://images.pexels.com/photos/2559941/pexels-photo-2559941.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)';
+  } else if (number === 7) {
+    body.style.backgroundImage = 'url(https://images.pexels.com/photos/1114690/pexels-photo-1114690.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)';
+  } else if (number === 8) {
+    body.style.backgroundImage = 'url(https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940)';
+  }
 
   const userInput = document.getElementById('userCity');
   const city = userInput.value;
