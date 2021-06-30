@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: url(images/bg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.toggleMargin {
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.fa {
+    visibility: hidden;
+}
+
+.position {
+    position: absolute; 
+    left: 30px; 
+    top: 10px;
+    font-size: 75px;
+}
+
+.card-weather {
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+.card-box{
+    background-color: rgba(0, 0, 0, 0.212); 
+    color: rgba(115, 115, 114, 0.2);
+    margin: 55px 35%;
+    padding: 45px 0;
+    border-radius: 5%;
+}
+@media only screen and (max-width: 767px) {
+    .card-box{
+        margin: 55px 20%;
+    }
+    .position {
+        font-size: 30px;
+    }
+}
