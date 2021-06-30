@@ -2,11 +2,26 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-image: url(images/universe.jpg);
+    background-image: url(images/bg1.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+.toggleMargin {
+    margin-right: 250px;
+    margin-left: 250px;
+}
+
+.fa {
+    visibility: hidden;
+}
+
+.position {
+    position: absolute; 
+    left: 30px; 
+    top: 10px;
+    font-size: 75px;
 }
 
 .card-weather {
@@ -23,5 +38,8 @@ body {
 @media only screen and (max-width: 767px) {
     .card-box{
         margin: 55px 20%;
+    }
+    .position {
+        font-size: 28px;
     }
 }
