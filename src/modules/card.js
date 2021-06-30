@@ -17,11 +17,9 @@ const displayWeather = (city, icon, temp, description, country, main) => {
   today = `${mm}/${dd}/${yyyy}`;
   time = `${hour}:${minutes}`;
 
-
   const tempcel = temp - 273.15;
   const tempfa1 = tempcel * 9;
   const tempfa = tempfa1 / 5 + 32;
-  
 
   div.innerHTML = `
   

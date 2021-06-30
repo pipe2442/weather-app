@@ -1,7 +1,6 @@
 import displayWeather from './card';
 
 const request = () => {
-  
   function random(min, max) {
     const number = Math.random() * (max - min) + min;
     return Math.trunc(number);
