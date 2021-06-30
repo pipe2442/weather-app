@@ -60,7 +60,7 @@ Launch the local version of this project opening the `dist/index.html` file in t
 
 
 # Project Screenshot
-![screenshot](https://github.com/carloso0114/todo-list-js/blob/feature-todo-list/dist/images/screenshot.png)
+![screenshot](https://github.com/pipe2442/weather-app/blob/feature/weather-app/dist/assets/images/screenshot.PNG)
 
 ## Authors
 
