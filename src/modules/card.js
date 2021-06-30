@@ -1,24 +1,23 @@
 const displayWeather = (city, icon, temp, description, country, main) => {
-    const dom = document.querySelector('#content')
+  const dom = document.querySelector('#content');
 
-    const div = document.createElement('div')
-    div.setAttribute("id", "weatherCard");
-    const src = `https://openweathermap.org/img/w/${icon}.png`
+  const div = document.createElement('div');
+  div.setAttribute('id', 'weatherCard');
+  const src = `https://openweathermap.org/img/w/${icon}.png`;
 
-    let today = new Date();
-    let dd = String(today.getDate()).padStart(2, '0');
-    let mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
-    let yyyy = today.getFullYear();
+  let today = new Date();
+  const dd = String(today.getDate()).padStart(2, '0');
+  const mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+  const yyyy = today.getFullYear();
 
-    let time = new Date();
-    let minutes = time.getMinutes();
-    let hour = time.getHours();
-    
+  let time = new Date();
+  const minutes = time.getMinutes();
+  const hour = time.getHours();
 
-    today = mm + '/' + dd + '/' + yyyy;
-    time = hour + ':' + minutes
- 
-    div.innerHTML = `
+  today = `${mm}/${dd}/${yyyy}`;
+  time = `${hour}:${minutes}`;
+
+  div.innerHTML = `
     <div class="text-white text-center card-weather card-box">
         <h2> ${city} </h2>
         <h2> ${country} </h2>
@@ -29,9 +28,9 @@ const displayWeather = (city, icon, temp, description, country, main) => {
         <p> ${description} </p>
         <img src="${src}" alt="icon"">
     </div>
-    `
-    if (dom.hasChildNodes()) {dom.removeChild(document.getElementById('weatherCard'))}
-    dom.appendChild(div)   
-}
+    `;
+  if (dom.hasChildNodes()) { dom.removeChild(document.getElementById('weatherCard')); }
+  dom.appendChild(div);
+};
 
-export { displayWeather }
+export default displayWeather;
