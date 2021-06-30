@@ -21,14 +21,16 @@ const displayWeather = (city, icon, temp, description, country, main) => {
     time = hour + ':' + minutes
  
     div.innerHTML = `
-    <h2> ${city} </h2>
-    <h2> ${country} </h2>
-    <h3> ${today} </h3>
-    <h3> ${time} </h3>
-    <h3> ${temp} </h3>
-    <p> ${main} </p>
-    <p> ${description} </p>
-    <img src="${src}" alt="icon"">
+    <div class="text-white text-center card-weather card-box">
+        <h2> ${city} </h2>
+        <h2> ${country} </h2>
+        <h3> ${today} </h3>
+        <h3> ${time} </h3>
+        <h3> ${temp}°C </h3>
+        <p> ${main} </p>
+        <p> ${description} </p>
+        <img src="${src}" alt="icon"">
+    </div>
     `
     if (dom.hasChildNodes()) {
         dom.removeChild(document.getElementById('weatherCard'))   

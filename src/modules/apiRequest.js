@@ -9,7 +9,7 @@ const request = () =>  {
     .then(response => response.json())
     .then(data => {
         const icon = data.weather[0].icon
-        const temp = data.main.temp - 273.15
+        const temp = (data.main.temp - 273.15).toFixed()
         const description = data.weather[0].description
         const main = data.weather[0].main
         const name =  data.name
