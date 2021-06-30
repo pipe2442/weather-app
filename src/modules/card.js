@@ -1,5 +1,3 @@
-import { dataForm } from "./form"
-
 const displayWeather = (city, icon, temp, description, country, main) => {
     const dom = document.querySelector('#content')
 
@@ -32,9 +30,7 @@ const displayWeather = (city, icon, temp, description, country, main) => {
         <img src="${src}" alt="icon"">
     </div>
     `
-    if (dom.hasChildNodes()) {
-        dom.removeChild(document.getElementById('weatherCard'))   
-    }
+    if (dom.hasChildNodes()) {dom.removeChild(document.getElementById('weatherCard'))}
     dom.appendChild(div)   
 }
 
